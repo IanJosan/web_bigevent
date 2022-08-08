@@ -21,9 +21,9 @@ function getUserInfo() {
         method:"get",
         url:"/my/userinfo",
         //请求头配置对象
-        headers:{
-            Authorization:localStorage.getItem('token') || ''
-        },
+        // headers:{
+        //     Authorization:localStorage.getItem('token') || ''
+        // },
         success:function(res) {
             if(res.status !== 0) {
                 return layui.layer.msg('获取信息失败')
